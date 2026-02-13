@@ -590,6 +590,18 @@ body {
   animation: fadeInUp 0.8s ease 0.5s both;
 }
 
+.celebration-gif {
+    margin-bottom: 24px;
+    animation: fadeInUp 0.8s ease 0.6s both;
+}
+
+.celebration-gif img {
+    width: 220px;
+    max-width: 80vw;
+    border-radius: 16px;
+    box-shadow: 0 6px 24px rgba(139, 34, 82, 0.15);
+}
+
 .love-letter-final {
   max-width: 440px;
   margin: 0 auto 30px;

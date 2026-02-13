@@ -251,7 +251,7 @@
     noCount++;
 
     // On 4th click, PULVERIZE!
-    if (noCount >= 4) {
+    if (noCount >= 2) {
       pulverizeButton(btnNo);
       // Grow Yes button to fill the space
       btnYes.style.transform = 'scale(1.5)';
@@ -277,7 +277,7 @@
 
     // Update counter text
     if (noCount === 1) {
-      noCounter.textContent = 'Hmm, are you really sure about that?';
+      noCounter.textContent = 'the only way is my heart';
     } else if (noCount >= 2) {
       noCounter.textContent = '';
     }
@@ -285,12 +285,6 @@
 
   btnNo.addEventListener('click', handleNo);
   btnNo.addEventListener('mouseenter', dodgeNo);
-  btnNo.addEventListener('touchstart', function (e) {
-    if (noCount >= 2 && noCount < 4) {
-      e.preventDefault();
-      dodgeNo();
-    }
-  }, { passive: false });
 
   // === "Yes" Button — Celebration! ===
   btnYes.addEventListener("click", function () {
