@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>V. | A Special Question For You</title>
+    <meta
+      name="description"
+      content="A Valentine's Day Proposal — crafted with love."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Great+Vibes&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Floating Hearts Canvas -->
+    <canvas id="heartsCanvas"></canvas>
+
+    <!-- Tiny sparkle particles -->
+    <div id="sparkles"></div>
+
+    <!-- Page Header -->
+    <header class="site-header">
+      <span class="header-monogram">V.</span>
+      <span class="header-date">Valentine's 2026</span>
+    </header>
+
+    <!-- STAGE 1: Envelope Intro -->
+    <section id="envelope-stage" class="stage active">
+      <div class="envelope-wrapper">
+        <p class="tap-hint">tap to open</p>
+        <div class="envelope" id="envelope">
+          <div class="envelope-flap"></div>
+          <div class="envelope-body">
+            <div class="envelope-seal">❤️</div>
+          </div>
+          <div class="letter" id="letter">
+            <div class="letter-content">
+              <p class="letter-greeting">My Dearest Bujjulu,</p>
+              <p class="letter-text">
+                I've been meaning to ask you something really important...
+              </p>
+              <button class="btn-continue" id="openProposal">
+                Read More →
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STAGE 2: The Proposal -->
+    <section id="proposal-stage" class="stage">
+      <div class="proposal-card">
+        <div class="rose-decoration rose-top-left"></div>
+        <div class="rose-decoration rose-bottom-right"></div>
+        <div class="proposal-inner">
+          <div class="heart-icon-big">💕</div>
+          <h1 class="proposal-question">
+            Will you be my <span class="highlight">Valentine</span>, Bujjulu?
+          </h1>
+          <p class="proposal-sub">
+            Every moment with you feels like a beautiful dream I never want to
+            wake up from.
+          </p>
+          <div class="buttons-wrapper">
+            <button class="btn btn-yes" id="btnYes">Yes! 💖</button>
+            <button class="btn btn-no" id="btnNo">No</button>
+          </div>
+          <p class="no-counter" id="noCounter"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- STAGE 3: Celebration -->
+    <section id="celebration-stage" class="stage">
+      <canvas id="confettiCanvas"></canvas>
+      <div class="celebration-content">
+        <div class="celebration-hearts">
+          <span>💖</span><span>💕</span><span>💗</span><span>💝</span
+          ><span>💖</span>
+        </div>
+        <h1 class="celebration-title">Yay! 🎉</h1>
+        <p class="celebration-message">I knew you'd say yes!</p>
+        <div class="love-letter-final">
+          <p>
+            Bujjulu, you make my heart skip a beat every single day. I can't wait to
+            spend this Valentine's Day — and every day after — with you.
+          </p>
+          <p class="signature">Forever yours ❤️</p>
+        </div>
+        <div class="celebration-emojis">
+          <span class="floating-emoji" style="--delay: 0s; --x: -30px">🌹</span>
+          <span class="floating-emoji" style="--delay: 0.3s; --x: 20px"
+            >💌</span
+          >
+          <span class="floating-emoji" style="--delay: 0.6s; --x: -10px"
+            >🥰</span
+          >
+          <span class="floating-emoji" style="--delay: 0.9s; --x: 40px"
+            >💐</span
+          >
+          <span class="floating-emoji" style="--delay: 1.2s; --x: -25px"
+            >✨</span
+          >
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
